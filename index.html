@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>성공적인 직업생활 - 근로관계와 산업 안전</title>
+<style>
+  :root{
+    --bg:#f4f6f9; --card:#ffffff; --text:#1e2330; --sub:#64748b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; padding:40px 20px; min-height:100vh;
+    background:var(--bg);
+    font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif;
+    color:var(--text);
+  }
+  .wrap{max-width:720px; margin:0 auto;}
+  .top{text-align:center; margin-bottom:36px;}
+  .eyebrow{
+    display:inline-block; font-size:13px; font-weight:700; color:#7c3aed;
+    background:#f3e8ff; padding:6px 14px; border-radius:20px; margin-bottom:14px;
+  }
+  h1{font-size:26px; margin:0 0 8px; line-height:1.4;}
+  .desc{color:var(--sub); font-size:15px; margin:0;}
+  .grid{display:flex; flex-direction:column; gap:16px;}
+  a.card{
+    display:flex; align-items:center; gap:18px;
+    background:var(--card); border-radius:16px; padding:22px 24px;
+    text-decoration:none; color:var(--text);
+    box-shadow:0 2px 10px rgba(0,0,0,0.06);
+    border-left:8px solid var(--accent);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  a.card:hover{transform:translateY(-3px); box-shadow:0 8px 20px rgba(0,0,0,0.10);}
+  .num{
+    flex-shrink:0; width:44px; height:44px; border-radius:12px;
+    background:var(--accent); color:#fff; font-weight:800; font-size:17px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .card-body{flex:1;}
+  .card-title{font-size:17px; font-weight:800; margin:0 0 4px;}
+  .card-sub{font-size:13.5px; color:var(--sub); margin:0;}
+  .arrow{flex-shrink:0; color:var(--accent); font-size:20px; font-weight:700;}
+  .c1{--accent:#1e40af;}
+  .c2{--accent:#0d9488;}
+  .c3{--accent:#c2410c;}
+  .c4{--accent:#16a34a;}
+  footer{text-align:center; margin-top:36px; color:#94a3b8; font-size:12.5px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <span class="eyebrow">대단원 V. 근로관계와 산업 안전</span>
+    <h1>성공적인 직업생활 자습자료</h1>
+    <p class="desc">소단원을 선택하면 탭형 학습자료로 이동합니다</p>
+  </div>
+
+  <div class="grid">
+    <a class="card c1" href="labor-relations-law.html">
+      <div class="num">01</div>
+      <div class="card-body">
+        <p class="card-title">근로관계와 법</p>
+        <p class="card-sub">근로관계법의 종류·원리, 근로계약, 현장실습</p>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+
+    <a class="card c2" href="employment-services.html">
+      <div class="num">02</div>
+      <div class="card-body">
+        <p class="card-title">고용 서비스와 사회 제도</p>
+        <p class="card-sub">고용 서비스, 고용보험(실업급여), 현장실습생 의무</p>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+
+    <a class="card c3" href="industrial-safety.html">
+      <div class="num">03</div>
+      <div class="card-body">
+        <p class="card-title">산업 안전과 재해 예방</p>
+        <p class="card-sub">안전사고 형태, 산업현장 안전수칙, 산업재해 예방</p>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+
+    <a class="card c4" href="cooperative-labor-relations.html">
+      <div class="num">04</div>
+      <div class="card-body">
+        <p class="card-title">협력적인 노사 관계</p>
+        <p class="card-sub">노동조합, 사용자단체, 상생의 노사 문화</p>
+      </div>
+      <div class="arrow">›</div>
+    </a>
+  </div>
+
+  <footer>성공적인 직업생활 · 대단원 V</footer>
+</div>
+</body>
+</html>
