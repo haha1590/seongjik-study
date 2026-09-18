@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>협력적인 노사 관계 | 성공적인 직업생활</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:14px;color:#1a1a1a;background:#eff9f1;word-break:keep-all;}
+.site-header{background:linear-gradient(135deg,#14532d 0%,#16a34a 55%,#4ade80 100%);color:#fff;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 8px rgba(0,0,0,0.18);}
+.site-header h1{font-size:20px;font-weight:700;}
+.site-header .sub{font-size:12px;opacity:.85;margin-top:3px;}
+.badge-wrap{display:flex;gap:8px;}
+.header-badge{font-size:11px;font-weight:700;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.35);border-radius:20px;padding:4px 12px;color:#fff;}
+.tab-nav{display:flex;background:#fff;border-bottom:2px solid #16a34a;padding:0 24px;overflow-x:auto;position:sticky;top:0;z-index:100;box-shadow:0 2px 6px rgba(0,0,0,0.07);scrollbar-width:thin;}
+.tab-btn{padding:13px 15px;font-size:13px;font-weight:500;font-family:inherit;color:#666;background:transparent;border:none;border-bottom:3px solid transparent;margin-bottom:-2px;cursor:pointer;white-space:nowrap;transition:all .2s;}
+.tab-btn:hover{color:#16a34a;background:#f0fdf4;}
+.tab-btn.active{color:#16a34a;border-bottom-color:#16a34a;font-weight:700;}
+.tab-btn .num{display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;font-size:11px;font-weight:700;background:#16a34a;color:#fff;border-radius:50%;margin-right:6px;}
+.tab-btn.active .num{background:#14532d;}
+.progress-bar{height:3px;background:#e5e7eb;position:sticky;top:48px;z-index:99;}
+.progress-fill{height:100%;background:#16a34a;transition:width .3s;}
+.page{display:none;padding:20px 24px 40px;max-width:960px;margin:0 auto;}
+.page.show{display:block;}
+.page-title{font-size:17px;font-weight:700;color:#14532d;padding:10px 16px;margin-bottom:16px;background:linear-gradient(90deg,#f0fdf4,#fff);border-left:4px solid #4ade80;border-radius:0 8px 8px 0;}
+.sec-title{font-size:14px;font-weight:700;color:#16a34a;padding-left:10px;border-left:3px solid #16a34a;margin:16px 0 8px;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:12px;}
+@media(max-width:640px){.grid2,.grid3{grid-template-columns:1fr;}}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:14px 16px;margin-bottom:12px;box-shadow:0 1px 3px rgba(0,0,0,.05);}
+.card-title{font-size:13px;font-weight:700;color:#14532d;margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid #bbf7d0;}
+.card-title.red{color:#991b1b;border-bottom-color:#fecaca;}
+.card-title.blue{color:#1e40af;border-bottom-color:#bfdbfe;}
+.hl{border-radius:8px;padding:11px 14px;margin-bottom:10px;}
+.hl.green{background:#f0fdf4;border:1px solid #bbf7d0;}
+.hl.red{background:#fff1f2;border:1px solid #fecaca;}
+.hl.yellow{background:#fefce8;border:1px solid #fde047;}
+.hl.blue{background:#eff6ff;border:1px solid #bfdbfe;}
+.hl.gray{background:#f9fafb;border:1px solid #e5e7eb;}
+.hl-title{font-size:12px;font-weight:700;margin-bottom:6px;color:#14532d;}
+.hl-title.red{color:#991b1b;}
+ul.dot{list-style:none;}
+ul.dot li{font-size:13px;line-height:1.85;padding-left:18px;position:relative;color:#222;}
+ul.dot li::before{content:'•';position:absolute;left:0;color:#16a34a;font-weight:700;}
+ul.dot.red li::before{color:#dc2626;}
+ul.chk{list-style:none;}
+ul.chk li{font-size:13px;line-height:1.85;padding-left:20px;position:relative;color:#222;}
+ul.chk li::before{content:'✓';position:absolute;left:0;color:#059669;font-weight:700;}
+ul.chk.warn li::before{content:'⚠';color:#dc2626;font-size:11px;}
+p.body{font-size:13px;line-height:1.85;color:#333;}
+.cmp-table{width:100%;border-collapse:collapse;font-size:12.5px;margin-bottom:12px;}
+.cmp-table th{background:#14532d;color:#fff;padding:8px 10px;text-align:center;font-weight:700;}
+.cmp-table th.sub1{background:#16a34a;}
+.cmp-table td{padding:8px 10px;border:1px solid #e5e7eb;vertical-align:top;line-height:1.7;}
+.cmp-table tr:nth-child(even) td{background:#fafafa;}
+.cmp-table .row-hd{background:#dcfce7;font-weight:700;color:#14532d;text-align:center;width:110px;}
+.divider{border:none;border-top:1px solid #e5e7eb;margin:14px 0;}
+.full-card{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:14px 18px;margin-bottom:12px;}
+.memo-box{background:linear-gradient(135deg,#14532d,#16a34a);color:#fff;border-radius:10px;padding:14px 16px;margin-bottom:12px;}
+.memo-box .memo-title{font-size:13px;font-weight:700;margin-bottom:8px;opacity:.9;}
+.memo-box ul{list-style:none;}
+.memo-box ul li{font-size:13px;line-height:1.9;padding-left:16px;position:relative;}
+.memo-box ul li::before{content:'→';position:absolute;left:0;opacity:.8;}
+.site-footer{text-align:center;padding:20px;color:#9ca3af;font-size:12px;margin-top:20px;}
+em{font-style:normal;font-weight:700;color:#16a34a;}
+em.rd{color:#dc2626;}
+.examtag{display:inline-block;font-size:10.5px;font-weight:700;background:#db2777;color:#fff;border-radius:10px;padding:1px 8px;margin-left:6px;vertical-align:middle;white-space:nowrap;}
+.trap-box{background:#fdf2f8;border:1.5px dashed #db2777;border-radius:8px;padding:10px 14px;margin:8px 0 12px;font-size:12.5px;color:#831843;}
+.trap-box b{color:#be185d;}
+.num-circle{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;background:#16a34a;color:#fff;border-radius:50%;font-size:12px;font-weight:700;margin-right:6px;flex-shrink:0;}
+.step-item{display:flex;align-items:flex-start;gap:6px;font-size:12.5px;line-height:1.7;margin-bottom:6px;}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div>
+    <h1>🤝 협력적인 노사 관계</h1>
+    <div class="sub">성공적인 직업생활 · V단원-04 | 근로관계와 산업 안전</div>
+  </div>
+  <div class="badge-wrap">
+    <div class="header-badge">4 PAGES</div>
+    <div class="header-badge">자율학습용</div>
+  </div>
+</header>
+<div class="progress-bar"><div class="progress-fill" id="prog" style="width:25%"></div></div>
+<nav class="tab-nav">
+  <button class="tab-btn active" onclick="show(0)"><span class="num">1</span>노동조합의 이해</button>
+  <button class="tab-btn" onclick="show(1)"><span class="num">2</span>노동조합·사용자단체의 책임</button>
+  <button class="tab-btn" onclick="show(2)"><span class="num">3</span>상생의 노사 문화</button>
+  <button class="tab-btn" onclick="show(3)"><span class="num">4</span>단원평가·빈출 암기</button>
+</nav>
+
+<!-- PAGE 1 -->
+<div class="page show" id="p0">
+  <div class="page-title">📌 Page 1 — 노동조합의 이해</div>
+
+  <div class="sec-title">① 노동조합의 개념과 역할</div>
+  <div class="full-card">
+    <p class="body">노동조합은 <em>근로자가 주체가 되어 자주적으로 단결</em>하여 근로 조건의 유지·개선, 기타 근로자의 경제적·사회적 지위의 향상을 도모함을 목적으로 조직하는 단체 또는 그 연합 단체이다. 근로자의 노동이라는 생산 요소를 가지고 조합원들의 의견을 집단적으로 수용하여 사용자와 교섭하고, 단체 행동을 통해 노동자들의 의견을 관철시키고자 하는 행동의 주체이다.</p>
+    <div class="hl gray" style="font-size:12.5px;margin-top:8px">기업별 노동조합 → 지역별·산업별 노동조합 → 전국 단위 ○○○총연맹으로 연합·통합되는 구조. 우리나라 노동조합의 대부분은 <em>기업별 노동조합</em>이다.</div>
+  </div>
+  <div class="grid3">
+    <div class="hl green"><div class="hl-title">경제적 역할</div><p class="body" style="font-size:12.5px">조합원의 노동 조건 및 임금 수준의 개선 등</p></div>
+    <div class="hl green"><div class="hl-title">심리적 역할</div><p class="body" style="font-size:12.5px">소속감 부여, 조합원의 심리적 안정 확보 등</p></div>
+    <div class="hl green"><div class="hl-title">정치적 역할</div><p class="body" style="font-size:12.5px">사회 문제에 대한 집합적 목소리, 정당 지지 등을 통한 사회 개혁 운동 참여</p></div>
+  </div>
+
+  <div class="sec-title">② 노사 관계의 특성과 원리</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">노사 관계 3가지 차원</div>
+      <ul class="dot" style="font-size:12.5px">
+        <li><em>경제적 차원</em> — 구매자-판매자 시장 거래 관계, 기업은 생산 요소로 근로자를 고용</li>
+        <li><em>법률적 차원</em> — 개인들이 동등한 위치에서 행하는 계약 관계, 쌍방이 법적 영향력 행사 못함</li>
+        <li><em>협력적 차원</em> — 권위적·계층적 조직의 인간관계 중시, 강제보다는 협력을 통한 통합 강조</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">노사 관계의 원리 (4대 원칙)<span class="examtag">⭐매우중요</span></div>
+      <ul class="dot" style="font-size:12.5px">
+        <li><em>노사 대등의 원칙</em> — 사용자가 노동조합 의견을 반드시 반영해야 한다고 인식</li>
+        <li><em>상호 불개입의 원칙</em> — 노동조합과 사용자는 각각 독립된 존재, 서로 조직·운영에 개입 불가</li>
+        <li><em>노사 자치의 원칙</em> — 자유로운 단체 교섭으로 단체 협약을 체결, 노사 관계를 자주적으로 형성</li>
+        <li><em>상호 이해의 원칙</em> — 서로 상대방의 입장을 이해하고 존중하는 자세 필요</li>
+      </ul>
+    </div>
+  </div>
+  <div class="hl gray" style="font-size:12px">노동조합의 독립성: 사용자로부터 경비 지출 지원, 회유·지배 등 간섭을 받으면 본래 임무를 충분히 할 수 없어 완전히 독립된 자주적 존재여야 함</div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="p1">
+  <div class="page-title">📌 Page 2 — 노동조합·사용자 단체의 역할과 사회적 책임</div>
+
+  <div class="sec-title">① 노동조합·사용자 단체의 역할</div>
+  <div class="grid2">
+    <div class="card">
+      <div class="card-title">사용자 단체</div>
+      <p class="body" style="font-size:12.5px;margin-bottom:6px">사용자를 직·간접적으로 대표하는 노사 관계의 다른 한 축. 노동관계에 관하여 구성원인 사용자에 대해 조정·규제할 수 있는 권한을 가진 단체 (전국 수준: 전국경제인연합회·한국경영자총연맹 / 산업 수준: 금속산업사용자협의회 등)</p>
+      <ul class="dot" style="font-size:12.5px">
+        <li>사용자 의견 대변, 정부 정책에 건의·영향력 행사</li>
+        <li>단체 교섭에 직접 참여하거나 지원</li>
+        <li>노사 분쟁 발생 사업체 간 상호 지원</li>
+        <li>사용자 회원조직 서비스 제공(교육·훈련·조사·연구)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-title">사용자 단체의 사회적 책임</div>
+      <p class="body" style="font-size:12.5px">사용자는 기업 경영과 관련된 조직·자원을 관리하고 책임진다. 헌법과 법률을 준수하고 작업장의 산업 안전을 책임지며, 노동자의 원활한 생산 활동을 보장해야 한다. 부당 노동 행위로 인한 노사 갈등이 발생하지 않도록 규칙을 잘 지킬 의무가 있으며, 일터 속 민주주의가 지켜지도록 노력하고 기업의 사회적 책임을 다해야 한다.</p>
+    </div>
+  </div>
+
+  <div class="sec-title">② 노동조합의 사회적 책임 7대 원칙<span class="examtag">⭐매우중요</span></div>
+  <div class="card">
+    <table class="cmp-table">
+      <thead><tr><th style="width:130px">원칙</th><th class="sub1">내용</th></tr></thead>
+      <tbody>
+        <tr><td class="row-hd">설명 책임</td><td>조직이 사회·경제·환경에 미치는 영향을 설명, 적절한 감사에 대응</td></tr>
+        <tr><td class="row-hd">투명성</td><td>조직의 의사 결정 및 활동이 투명해야 함</td></tr>
+        <tr><td class="row-hd">윤리적 행동</td><td>정직성·평등성·성실성이 행동 기반, 인간·동물·환경에 대한 관심</td></tr>
+        <tr><td class="row-hd">이해관계자 존중</td><td>조직의 소유자·회원·고객 및 다른 개인·조직의 이해관계 존중</td></tr>
+        <tr><td class="row-hd">법치 존중</td><td>법의 우위 인식, 관련 법·규정 준수 의무를 조직 내 알리고 실행</td></tr>
+        <tr><td class="row-hd">국제 행동 규범 존중</td><td>법의 시행이 미흡하거나 열악할 경우 최소한 국제 행동 규범 존중</td></tr>
+        <tr><td class="row-hd">인권 존중</td><td>인권을 존중하고 그 중요성·보편성을 인식</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sec-title">③ 노동조합 사회적 책임 활동 주제</div>
+  <div class="hl green">
+    <ul class="dot">
+      <li><em>조직 지배 구조</em> — 의사 결정 투명성, 이해관계자의 고른 참여, 소외 계층 참여 보장</li>
+      <li><em>인권</em> — 근로자·소비자의 기본 인권 존중, 표현의 자유 보장, 아동 노동력 착취 금지</li>
+      <li><em>노동 관행</em> — 국제노동기구(ILO) 기준 준수, 안정적 고용 관계, 직장 내 안전·보건 관리</li>
+      <li><em>환경</em> — 오염 물질·탄소 배출 감축, 내부 고발자 보호</li>
+      <li><em>지역 사회 참여와 발전</em> — 지역 공동체 참여, 고용 창출, 조세 의무 준수</li>
+    </ul>
+  </div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="p2">
+  <div class="page-title">📌 Page 3 — 상생의 노사 문화</div>
+
+  <div class="sec-title">① 노사 문화의 개념</div>
+  <div class="full-card">
+    <p class="body">노사 문화는 노동자와 기업 간에 존재하는 의식이나 관행, 제도 등을 의미한다. 노사 간의 신뢰와 존중에 직접적인 영향을 미치며, 현대 사회와 같은 무한 경쟁 시대에 기업 생존을 위한 필수 요인으로 인식되고 있다.</p>
+    <div class="grid2" style="margin-top:10px">
+      <div class="hl blue">
+        <div class="hl-title" style="color:#1e40af">노사 관계</div>
+        <p class="body" style="font-size:12.5px">제도적인 부분이 더 강함 → <em>제도·법 → 관행 → 의식</em> 순으로 나타남</p>
+      </div>
+      <div class="hl green">
+        <div class="hl-title">노사 문화</div>
+        <p class="body" style="font-size:12.5px">의식이 훨씬 더 강함 → <em>의식 → 관행 → 제도·법</em> 순으로 영향을 미침</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec-title">② 노사 문화의 중요성</div>
+  <div class="hl yellow">
+    <p class="body">노사 문화는 사회·경제 활동에 직접적인 영향을 미친다. 노사 관계가 악화되면 근로자들의 파업이 이루어지고, 그 손실과 영향으로 일반 국민들에게 불편과 불안감을 주며 국가 경제와 사회 전반에 큰 영향을 미친다. 노사 갈등으로 인한 파업은 생산 중단 → 국내외 시장 매출·수출 시기 차질 → 시장 침체 및 수출 기업 이미지 하락 → 국가 경쟁력 약화로 이어진다.</p>
+  </div>
+
+  <div class="sec-title">③ 바람직한 노사 문화<span class="examtag">⭐매우중요</span></div>
+  <div class="hl green">
+    <ul class="chk">
+      <li>상당한 정도의 산업 평화를 유지한다 (작업 중단이 거의 없어야 함)</li>
+      <li>노사 양측이 기존 조직으로서의 상대방의 요구를 받아들여야 한다 (기업은 노조 파괴 시도 금지, 노조도 기업 이익 상실시키면 안 됨)</li>
+      <li>노사 양측이 상호 관계가 공정하다고 믿어야 한다 (평화적일 뿐 아니라 공평해야 함)</li>
+      <li>바람직한 노사 관계의 순효과가 제3자에게 손해를 주지 않아야 한다</li>
+    </ul>
+  </div>
+  <div class="trap-box"><b>⚠ 함정 주의</b> — <b>"사용자 측이 노동조합의 활동 범위를 최종적으로 결정한다"</b>는 바람직한 노사 문화의 요건이 아니다. 상호 불개입의 원칙상 사용자는 노동조합의 조직·운영에 개입할 수 없다.</div>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page" id="p3">
+  <div class="page-title">📌 Page 4 — 단원평가 해설 및 빈출 암기</div>
+
+  <div class="sec-title">① 단원평가 문항 해설</div>
+  <div class="card">
+    <table class="cmp-table">
+      <thead><tr><th style="width:50px">문항</th><th>내용</th><th style="width:220px" class="sub1">정답</th></tr></thead>
+      <tbody>
+        <tr><td style="text-align:center;font-weight:700">05</td><td>근로자가 주체가 되어 자주적으로 단결하여 근로 조건의 유지·개선, 경제적·사회적 지위 향상을 도모함을 목적으로 조직하는 단체는?</td><td><em>노동조합</em></td></tr>
+        <tr><td style="text-align:center;font-weight:700">15</td><td>노동조합의 7대 사회적 책임 중 2개를 선정해 설명하시오.</td><td><em>설명책임/투명성/윤리적 행동/이해관계자 존중/법치 존중/국제 행동 규범 존중/인권 존중 중 택2</em></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="sec-title">② 빈출 암기 포인트 🔥</div>
+  <div class="memo-box">
+    <div class="memo-title">✦ 핵심 암기</div>
+    <ul>
+      <li>우리나라 노동조합의 대부분은 <strong>기업별 노동조합</strong></li>
+      <li>노동조합의 3대 역할: <strong>경제적·심리적·정치적 역할</strong></li>
+      <li>노사 관계의 원리 4가지: <strong>노사 대등 / 상호 불개입 / 노사 자치 / 상호 이해</strong>의 원칙</li>
+      <li>노사 관계는 <strong>제도·법 → 관행 → 의식</strong> / 노사 문화는 <strong>의식 → 관행 → 제도·법</strong></li>
+      <li>노동조합 사회적 책임 7대 원칙: <strong>설명책임·투명성·윤리적행동·이해관계자존중·법치존중·국제행동규범존중·인권존중</strong></li>
+      <li>바람직한 노사 문화 4요건: 산업평화 유지 / 상호 요구 수용 / 공정성 신뢰 / 제3자 손해 방지</li>
+    </ul>
+  </div>
+
+  <div class="sec-title">③ 자주 틀리는 선지 ⚠</div>
+  <div class="hl red">
+    <div class="hl-title red">틀리기 쉬운 것들</div>
+    <ul class="chk warn">
+      <li>노동조합은 사용자로부터 경비 지원을 받아도 독립성이 유지된다 → <em class="rd">✗</em> (경비 지원·간섭을 받으면 독립성이 훼손됨)</li>
+      <li>노사 관계와 노사 문화는 완전히 같은 개념이다 → <em class="rd">✗</em> (형성 방향과 강조점이 다름 — 관계는 제도 중심, 문화는 의식 중심)</li>
+      <li>상호 불개입의 원칙은 노사가 서로 무관심해야 한다는 뜻이다 → <em class="rd">✗</em> (조직·운영에 개입하지 않는다는 뜻이지 무관심과는 다름)</li>
+      <li>노사 갈등으로 인한 파업은 해당 기업에만 영향을 미친다 → <em class="rd">✗</em> (국가 경제·사회 전반에 영향을 미침)</li>
+    </ul>
+  </div>
+</div>
+
+<footer class="site-footer">
+  성공적인 직업생활 · V단원-04 협력적인 노사 관계 학습자료 | 자율학습용
+</footer>
+<script>
+const tabs=document.querySelectorAll('.tab-btn');
+const pages=document.querySelectorAll('.page');
+const prog=document.getElementById('prog');
+const pct=[25,50,75,100];
+function show(i){
+  tabs.forEach((t,j)=>t.classList.toggle('active',i===j));
+  pages.forEach((p,j)=>p.classList.toggle('show',i===j));
+  prog.style.width=pct[i]+'%';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
